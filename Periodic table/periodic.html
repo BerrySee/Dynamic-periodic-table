@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dynamic Periodic Table</title>
+</head>
+
+<body>
+    <div class="background">
+        <img src="brbad.jpg">
+    </div>
+    <div class="container">
+
+
+        <!--CheckBox az elemekhez-->
+        <form action="">
+            <div>
+                <input type="checkbox" checked="checked" class="checkbox" onclick="getValue()" value="alkali-metals">
+                <label for=""> Alkáli fémek </label>
+                <br>
+                <input type="checkbox" checked="checked" class="checkbox" onclick="getValue()"
+                    value="alkali-earth-metal"> <label> Alkáli földfémek</label>
+                <br>
+                <input type="checkbox" checked="checked" class="checkbox" onclick="getValue()" value="lanthanoids">
+                <label>
+                    Lantanoidák</label>
+                <br>
+
+                <input type="checkbox" checked="checked" class="checkbox" onclick="getValue()" value="transition">
+                <label> Átmeneti fémek</label>
+                <br>
+                <input type="checkbox" checked="checked" class="checkbox" onclick="getValue()" value="other-metals">
+                <label> Másodfajú fémek</label>
+                <br>
+
+            </div>
+            <div>
+                <input type="checkbox" checked="checked" class="checkbox" onclick="getValue()" value="noble-gases">
+                <label> Nemesgázok</label><br>
+
+                <input type="checkbox" checked="checked" class="checkbox" onclick="getValue()" value="actionids">
+                <label>Aktionidák</label><br>
+                <input type="checkbox" checked="checked" class="checkbox" onclick="getValue()" value="other-nonmetals">
+                <label> Félfémek</label>
+                <br>
+                <input type="checkbox" checked="checked" class="checkbox" onclick="getValue()"
+                    value="more-atomic-nonmetals">
+                <label>Többatomos nemfémek</label><br>
+                <input type="checkbox" checked="checked" class="checkbox" onclick="getValue()"
+                    value="two-atomic-nonmetals">
+                <label>Kétatomos nemfémek</label><br>
+
+            </div>
+
+        </form>
+
+        <div class="col hydrogen two-atomic-nonmetals" href="#hydrogen">
+            <p href="#hydrogen">1</p>
+            <h2 href="#hydrogen">H</h2>
+            <p href="#hydrogen">1.008</p>
+        </div>
+        <div id="hydrogen" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Hidrogén</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Hidrogén" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+
+        </div>
+        <div class="col helium noble-gases" href="#helium">
+            <p href="#helium">2</p>
+            <h2 href="#helium">He</h2>
+            <p href="#helium">4.00</p>
+        </div>
+        <div id="helium" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Helium</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Hélium" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+
+        </div>
+        <div class="col lithium alkali-metals" href="#lithium">
+            <p href="#lithium">3</p>
+            <h2 href="#lithium">Li</h2>
+            <p href="#lithium">6.94</p>
+        </div>
+        <div id="lithium" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Lítium</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/L%C3%ADtium" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+
+        </div>
+        <div class="col  berillium alkali-earth-metal" href="#berillium">
+            <p href="#berillium">4</p>
+            <h2 href="#berillium">Be</h2>
+            <p href="#berillium">9.01</p>
+        </div>
+        <div id="berillium" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Berillium</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Berillium" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+
+        </div>
+        <div class="col boron other-nonmetals" href="#b">
+            <p href="#b">5</p>
+            <h2 href="#b">B</h2>
+            <p href="#b">10.81</p>
+        </div>
+        <div id="b" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Bór</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Bór" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+
+        </div>
+        <div class="col  carbon more-atomic-nonmetals" href="#c">
+            <p href="#c">6</p>
+            <h2 href="#c">C</h2>
+            <p href="#c">12.01</p>
+        </div>
+        <div id="c" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Szén</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Szén" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+
+        </div>
+        <div class="col  nitrogen two-atomic-nonmetals" href="#n">
+            <p href="#n">7</p>
+            <h2 href="#n">N</h2>
+            <p href="#n">14.01</p>
+        </div>
+        <div id="n" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Nitrogén</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Nitrogén" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+
+        </div>
+        <div class="col  oxygen two-atomic-nonmetals" href="#o">
+            <p href="#o">8</p>
+            <h2 href="#o">O</h2>
+            <p href="#o">16.00</p>
+        </div>
+        <div id="o" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Oxigén</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Oxigén" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+
+        </div>
+        <div class="col  fluor two-atomic-nonmetals" href="#f">
+            <p href="#f">9</p>
+            <h2 href="#f">F</h2>
+            <p href="#f">19.00</p>
+        </div>
+        <div id="f" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Fluor</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Fluor" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col  neon noble-gases" href="#ne">
+            <p href="#ne">10</p>
+            <h2 href="#ne">Ne</h2>
+            <p href="#ne">20.18</p>
+        </div>
+        <div id="ne" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Neon</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Neon" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col sodium alkali-metals" href="#na">
+            <p href="#na">11</p>
+            <h2 href="#na">Na</h2>
+            <p href="#na">22.99 </p>
+        </div>
+        <div id="na" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Nátrium</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Nátrium" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col  magnezium alkali-earth-metal" href="#mg">
+            <p href="#mg">12</p>
+            <h2 href="#mg">Mg</h2>
+            <p href="#mg">24.31</p>
+        </div>
+        <div id="mg" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Magnézium</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Magnézium" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col  aluminium other-metals" href="#al">
+            <p href="#al">13</p>
+            <h2 href="#al">Al</h2>
+            <p href="#al">26.98</p>
+        </div>
+        <div id="al" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Alumínium</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Alum%C3%ADnium" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col  silicium other-nonmetals" href="#si">
+            <p href="#si">14</p>
+            <h2 href="#si">Si</h2>
+            <p href="#si">28.09</p>
+        </div>
+        <div id="si" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Szilícium</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Szil%C3%ADcium" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col  phosphor more-atomic-nonmetals" href="#p">
+            <p href="#p">15</p>
+            <h2 href="#p">P</h2>
+            <p href="#p">30.97</p>
+        </div>
+        <div id="p" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Foszfor</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Foszfor" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col  sulfur more-atomic-nonmetals" href="#s">
+            <p href="#s">16</p>
+            <h2 href="#s">S</h2>
+            <p href="#s">32.07</p>
+        </div>
+        <div id="s" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Kén</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Kén" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col  chloride two-atomic-nonmetals" href="#cl">
+            <p href="#cl">17</p>
+            <h2 href="#cl">Cl</h2>
+            <p href="#cl">35.45</p>
+        </div>
+        <div id="cl" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Klór</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Klór" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col  argon noble-gases" href="#ar">
+            <p href="#ar">18</p>
+            <h2 href="#ar">Ar</h2>
+            <p href="#ar">39.95</p>
+        </div>
+        <div id="ar" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Argon</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Argon" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col  kalium alkali-metals" href="#k">
+            <p href="#k">19</p>
+            <h2 href="#k">K</h2>
+            <p href="#k">39.1</p>
+        </div>
+        <div id="k" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Kálium</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Kálium" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col  calcium alkali-earth-metal" href="#ca">
+            <p href="#ca">20</p>
+            <h2 href="#ca">Ca</h2>
+            <p href="#ca">40.078</p>
+        </div>
+        <div id="ca" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Kalcium</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Kalcium" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col  scandium transition" href="#sc">
+            <p href="#sc">21</p>
+            <h2 href="#sc">Sc</h2>
+            <p href="#sc">44.9</p>
+        </div>
+        <div id="sc" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Szkandium</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Szkandium" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col  titanium transition" href="#ti">
+            <p href="#ti">22</p>
+            <h2 href="#ti">Ti</h2>
+            <p href="#ti">47.86</p>
+        </div>
+        <div id="ti" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Titán</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Titán_(elem)" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col  vanadium transition" href="#v">
+            <p href="#v">23</p>
+            <h2 href="#v">V</h2>
+            <p href="#v">50.94</p>
+        </div>
+        <div id="v" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Vanádium</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Vanádium" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col  chrome transition" href="#ch">
+            <p href="#ch">24</p>
+            <h2 href="#ch">Ch</h2>
+            <p href="#ch">51.99</p>
+        </div>
+        <div id="ch" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Króm</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Króm" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col mangan transition" href="#mn">
+            <p href="#mn">25</p>
+            <h2 href="#mn">Mn</h2>
+            <p href="#mn">54.93</p>
+        </div>
+        <div id="mn" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Mangán</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Mangán" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col ferrum transition" href="#fe">
+            <p href="#fe">26</p>
+            <h2 href="#fe">Fe</h2>
+            <p href="#fe">55.84</p>
+        </div>
+        <div id="fe" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Vas</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Vas" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col  cobalt transition" href="#co">
+            <p href="#co">27</p>
+            <h2 href="#co">Co</h2>
+            <p href="#co">58.933</p>
+        </div>
+        <div id="co" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Kobalt</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Kobalt" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col  nikkel transition" href="#ni">
+            <p href="#ni">28</p>
+            <h2 href="#ni">Ni</h2>
+            <p href="#ni">58.69</p>
+        </div>
+        <div id="ni" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Nikkel</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Nikkel" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col  copper transition" href="#cu">
+            <p href="#cu">29</p>
+            <h2 href="#cu">Cu</h2>
+            <p href="#cu">63.54</p>
+        </div>
+        <div id="cu" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Réz</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Réz" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col  zinc transition" href="#zn">
+            <p href="#zn">30</p>
+            <h2 href="#zn">Zn</h2>
+            <p href="#zn">55.38</p>
+        </div>
+        <div id="zn" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Cink</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Cink" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col  gallium other-metals" href="#ga">
+            <p href="#ga">31</p>
+            <h2 href="#ga">Ga</h2>
+            <p href="#ga">69.723</p>
+        </div>
+        <div id="ga" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Gallium</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Gallium" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col  germanium other-nonmetals" href="#ge">
+            <p href="#ge">32</p>
+            <h2 href="#ge">Ge</h2>
+            <p href="#ge">72.63</p>
+        </div>
+        <div id="ge" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Germánium</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Germánium" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col  arsenic other-nonmetals" href="#as">
+            <p href="#as">33</p>
+            <h2 href="#as">As</h2>
+            <p href="#as">74.92</p>
+        </div>
+        <div id="as" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Arzén</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Arzén_(elem)" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col  selenium more-atomic-nonmetals" href="#se">
+            <p href="#se">34</p>
+            <h2 href="#se">Se</h2>
+            <p href="#se">78.97</p>
+        </div>
+        <div id="se" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Szelén</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Szelén" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col  bromine two-atomic-nonmetals" href="#br">
+            <p href="#br">35</p>
+            <h2 href="#br">Br</h2>
+            <p href="#br">79.90</p>
+        </div>
+        <div id="br" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Bróm</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Bróm" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col  krypton noble-gases" href="#kr">
+            <p href="#kr">36</p>
+            <h2 href="#kr">Kr</h2>
+            <p href="#kr">83.79</p>
+        </div>
+        <div id="kr" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Kripton</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Kripton" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col rubidium alkali-metals" href="#rb">
+            <p href="#rb">37</p>
+            <h2 href="#rb">Rb</h2>
+            <p href="#rb">85.46</p>
+        </div>
+        <div id="rb" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Rubídium</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Rub%C3%ADdium" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col strontium alkali-earth-metal" href="#sr">
+            <p href="#sr">38</p>
+            <h2 href="#sr">Sr</h2>
+            <p href="#sr">87.62</p>
+        </div>
+        <div id="sr" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Stroncium</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Stroncium" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col yttrium transition" href="#y">
+            <p href="#y">39</p>
+            <h2 href="#y">Y</h2>
+            <p href="#y">88.90</p>
+        </div>
+        <div id="y" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Ittrium</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Ittrium" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col zirconium transition" href="#zr">
+            <p href="#zr">40</p>
+            <h2 href="#zr">Zr</h2>
+            <p href="#zr">88.90</p>
+        </div>
+        <div id="zr" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Cirkónium</h2>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://hu.wikipedia.org/wiki/Cirkónium" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col niobium transition" id="krypton">
+            <p>41</p>
+            <h2>Nb</h2>
+            <p>92.95</p>
+        </div>
+        <div class="col molibden transition" id="krypton">
+            <p>42</p>
+            <h2>Mo</h2>
+            <p>95.95</p>
+        </div>
+        <div class="col technetium transition" id="krypton">
+            <p>43</p>
+            <h2>Tc</h2>
+            <p>98</p>
+        </div>
+        <div class="col ruthenium transition" id="krypton">
+            <p>44</p>
+            <h2>Rh</h2>
+            <p>101.1</p>
+        </div>
+        <div class="col rhodium transition" id="krypton">
+            <p>45</p>
+            <h2>Rh</h2>
+            <p>102</p>
+        </div>
+        <div class="col palladium transition" id="krypton">
+            <p>46</p>
+            <h2>Pd</h2>
+            <p>106.4</p>
+        </div>
+        <div class="col silver transition" id="krypton">
+            <p>47</p>
+            <h2>Ag</h2>
+            <p>107.87</p>
+        </div>
+        <div class="col cadmium transition" id="krypton">
+            <p>48</p>
+            <h2>Cd</h2>
+            <p>112.4</p>
+        </div>
+        <div class="col indium other-metals" id="krypton">
+            <p>49</p>
+            <h2>In</h2>
+            <p>114.8</p>
+        </div>
+        <div class="col tin other-metals" id="krypton">
+            <p>50</p>
+            <h2>Sn</h2>
+            <p>118.7</p>
+        </div>
+        <div class="col antimony other-nonmetals" id="krypton">
+            <p>51</p>
+            <h2>Sb</h2>
+            <p>121.8</p>
+        </div>
+        <div class="col tellurium other-nonmetals" id="krypton">
+            <p>52</p>
+            <h2>Te</h2>
+            <p>127.6</p>
+        </div>
+        <div class="col iodine two-atomic-nonmetals" id="krypton">
+            <p>53</p>
+            <h2>I</h2>
+            <p>126.9</p>
+        </div>
+        <div class="col xenon noble-gases" id="krypton">
+            <p>54</p>
+            <h2>Xe</h2>
+            <p>131.3</p>
+        </div>
+        <div class="col cesium alkali-metals" id="cesium">
+            <p>55</p>
+            <h2>Cs</h2>
+            <p>132.91</p>
+        </div>
+        <div class="col barium alkali-earth-metal" id="cesium">
+            <p>56</p>
+            <h2>Ba</h2>
+            <p>137.0</p>
+        </div>
+        <div class="col lanthan lanthanoids" id="cesium">
+            <p>57</p>
+            <h2>La</h2>
+            <p>138.9</p>
+        </div>
+        <div class="col hafnium transition" id="cesium">
+            <p>72</p>
+            <h2>Hf</h2>
+            <p>178.5</p>
+        </div>
+        <div class="col tantal transition" id="cesium">
+            <p>73</p>
+            <h2>Ta</h2>
+            <p>180.9</p>
+        </div>
+        <div class="col wolfram transition" id="cesium">
+            <p>75</p>
+            <h2>W</h2>
+            <p>183.8</p>
+        </div>
+        <div class="col remium transition" id="cesium">
+            <p>75</p>
+            <h2>Re</h2>
+            <p>186.2</p>
+        </div>
+        <div class="col osmium transition" id="cesium">
+            <p>76</p>
+            <h2>Os</h2>
+            <p>190.2</p>
+        </div>
+        <div class="col iridium transition" id="iridium">
+            <p>77</p>
+            <h2>Ir</h2>
+            <p>192.2</p>
+        </div>
+        <div class="col platina transition" id="platina">
+            <p>78</p>
+            <h2>Pt</h2>
+            <p>195.0</p>
+        </div>
+        <div class="col augurium transition" id="augurium">
+            <p>79</p>
+            <h2>Ag</h2>
+            <p>196.9</p>
+        </div>
+        <div class="col mercury transition" id="mercury">
+            <p>80</p>
+            <h2>Hg</h2>
+            <p>200.5</p>
+        </div>
+        <div class="col thallium other-metals" id="mercury">
+            <p>81</p>
+            <h2>Tl</h2>
+            <p>204.4</p>
+        </div>
+        <div class="col lead other-metals" id="mercury">
+            <p>82</p>
+            <h2>Pb</h2>
+            <p>207</p>
+        </div>
+        <div class="col bismuth other-metals" id="mercury">
+            <p>83</p>
+            <h2>Bi</h2>
+            <p>200.5</p>
+        </div>
+        <div class="col polonium other-metals" id="mercury">
+            <p>84</p>
+            <h2>Po</h2>
+            <p>208.9</p>
+        </div>
+        <div class="col astatine other-nonmetals" id="mercury">
+            <p>85</p>
+            <h2>At</h2>
+            <p>209.9</p>
+        </div>
+        <div class="col radon noble-gases" id="mercury">
+            <p>86</p>
+            <h2>Rn</h2>
+            <p>222.0</p>
+        </div>
+        <div class="col francium alkali-metals" id="mercury">
+            <p>87</p>
+            <h2>Fr</h2>
+            <p>223.02</p>
+        </div>
+        <div class="col radium alkali-earth-metal" id="mercury">
+            <p>88</p>
+            <h2>Ra</h2>
+            <p>226.02</p>
+        </div>
+        <div class="col actinium actionids" id="mercury">
+            <p>89</p>
+            <h2>Ac</h2>
+            <p>227.02</p>
+        </div>
+        <div class="col rutherfordium transition" id="mercury">
+            <p>104</p>
+            <h2>Rf</h2>
+            <p>261.0</p>
+        </div>
+        <div class="col dubnium transition" id="mercury">
+            <p>105</p>
+            <h2>Db</h2>
+            <p>262.0</p>
+        </div>
+        <div class="col seaborgium transition" id="mercury">
+            <p>106</p>
+            <h2>Sg</h2>
+            <p>266</p>
+        </div>
+        <div class="col bohrium transition" id="mercury">
+            <p>107</p>
+            <h2>Bh</h2>
+            <p>264</p>
+        </div>
+        <div class="col hassium transition" id="mercury">
+            <p>108</p>
+            <h2>Hs</h2>
+            <p>269.0</p>
+        </div>
+        <div class="col meintnerkum transition" id="mercury">
+            <p>109</p>
+            <h2>Mt</h2>
+            <p>278.0</p>
+        </div>
+        <div class="col darmstadium transition" id="mercury">
+            <p>110</p>
+            <h2>Ds</h2>
+            <p>281.0</p>
+        </div>
+        <div class="col roentgenium transition" id="mercury">
+            <p>111</p>
+            <h2>Rg</h2>
+            <p>280.0</p>
+        </div>
+        <div class="col copernicium transition" id="mercury">
+            <p>112</p>
+            <h2>Cn</h2>
+            <p>285.0</p>
+        </div>
+        <div class="col nihonium other-metals" id="mercury">
+            <p>113</p>
+            <h2>Nh</h2>
+            <p>286.0</p>
+        </div>
+        <div class="col flerovium other-metals" id="mercury">
+            <p>114</p>
+            <h2>Fl</h2>
+            <p>289.0</p>
+        </div>
+        <div class="col moscovium other-metals" id="mercury">
+            <p>115</p>
+            <h2>Mc</h2>
+            <p>286.0</p>
+        </div>
+        <div class="col livernorium other-metals" id="mercury">
+            <p>116</p>
+            <h2>Lv</h2>
+            <p>293.0</p>
+        </div>
+        <div class="col tenessine other-nonmetals" id="mercury">
+            <p>117</p>
+            <h2>Ts</h2>
+            <p>294.0</p>
+        </div>
+        <div class="col oganesson noble-gases" id="mercury">
+            <p>118</p>
+            <h2>Og</h2>
+            <p>294.0</p>
+        </div>
+        <div class="col cerium lanthanoids" id="mercury">
+            <p>58</p>
+            <h2>Ce</h2>
+            <p>140.1</p>
+        </div>
+        <div class="col praseodymium lanthanoids" id="mercury">
+            <p>59</p>
+            <h2>Pr</h2>
+            <p>144.9</p>
+        </div>
+        <div class="col neodymium lanthanoids" id="mercury">
+            <p>60</p>
+            <h2>Nd</h2>
+            <p>144.2</p>
+        </div>
+        <div class="col promethium lanthanoids" id="mercury">
+            <p>61</p>
+            <h2>Pm</h2>
+            <p>144.9</p>
+        </div>
+
+        <div class="col samarium lanthanoids" id="mercury">
+            <p>62</p>
+            <h2>Sm</h2>
+            <p>150.3</p>
+        </div>
+        <div class="col europium lanthanoids" id="mercury">
+            <p>63</p>
+            <h2>Eu</h2>
+            <p>151.9</p>
+        </div>
+        <div class="col gadollinium lanthanoids" id="mercury">
+            <p>64</p>
+            <h2>Gd</h2>
+            <p>157.2</p>
+        </div>
+        <div class="col teribium lanthanoids" id="mercury">
+            <p>65</p>
+            <h2>Tb</h2>
+            <p>158.9</p>
+        </div>
+        <div class="col dysporosium lanthanoids" id="mercury">
+            <p>66</p>
+            <h2>Dy</h2>
+            <p>162.5</p>
+        </div>
+        <div class="col holmium lanthanoids" id="mercury">
+            <p>67</p>
+            <h2>Ho</h2>
+            <p>164.9</p>
+        </div>
+        <div class="col erbium lanthanoids" id="mercury">
+            <p>68</p>
+            <h2>Er</h2>
+            <p>167.2</p>
+        </div>
+        <div class="col thullium lanthanoids" id="mercury">
+            <p>69</p>
+            <h2>Tm</h2>
+            <p>173.1</p>
+        </div>
+        <div class="col ytterbium lanthanoids" id="mercury">
+            <p>70</p>
+            <h2>Yb</h2>
+            <p>173.0</p>
+        </div>
+        <div class="col lutetium lanthanoids" id="mercury">
+            <p>71</p>
+            <h2>Lu</h2>
+            <p>174.9</p>
+        </div>
+        <div class="col thorium actionids" id="mercury">
+            <p>89</p>
+            <h2>Th</h2>
+            <p>232.0</p>
+        </div>
+        <div class="col protactinium actionids">
+            <p>91</p>
+            <h2>Pa</h2>
+            <p>231.036.9</p>
+        </div>
+        <div class="col uranium actionids" id="mercury">
+            <p>92</p>
+            <h2>U</h2>
+            <p>238.0</p>
+        </div>
+        <div class="col neptunium actionids" id="mercury">
+            <p>93</p>
+            <h2>Np</h2>
+            <p>237.0</p>
+        </div>
+        <div class="col plutonium actionids" id="mercury">
+            <p>94</p>
+            <h2>Pu</h2>
+            <p>244.0</p>
+        </div>
+        <div class="col americum actionids" id="mercury">
+            <p>95</p>
+            <h2>Am</h2>
+            <p>243.0</p>
+        </div>
+        <div class="col curium actionids" id="mercury">
+            <p>96</p>
+            <h2>Cm</h2>
+            <p>247.0</p>
+        </div>
+        <div class="col berkellium actionids" id="mercury">
+            <p>97</p>
+            <h2>Bk</h2>
+            <p>247.0</p>
+        </div>
+        <div class="col californium actionids" id="mercury">
+            <p>98</p>
+            <h2>Cf</h2>
+            <p>251.0</p>
+        </div>
+        <div class="col einsteinium actionids" id="mercury">
+            <p>99</p>
+            <h2>Es</h2>
+            <p>254.0</p>
+        </div>
+        <div class="col fermium actionids" id="mercury">
+            <p>100</p>
+            <h2>Fm</h2>
+            <p>257.1</p>
+        </div>
+        <div class="col mendelevium actionids" id="mercury">
+            <p>101</p>
+            <h2>Md</h2>
+            <p>258.0</p>
+        </div>
+        <div class="col nobellium actionids" id="mercury">
+            <p>102</p>
+            <h2>No</h2>
+            <p>259.1</p>
+        </div>
+        <div class="col lawrencium actionids" id="mercury">
+            <p>103</p>
+            <h2>Lr</h2>
+            <p>262.0</p>
+        </div>
+    </div>
+    <link rel="stylesheet" href="style.css">
+    <script src="periodic.js"></script>
+</body>
+
+</html>

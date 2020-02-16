@@ -1,0 +1,976 @@
+/* ===== az alap, basic-layout ====*/
+
+@import url('https://fonts.googleapis.com/css?family=Alatsi|Patua+One&display=swap');
+
+html {
+  font-family: 'Alatsi', sans-serif;
+}
+
+body {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin: 0 auto;
+  font-size: 8px;
+  text-align: center;
+}
+
+.col > h2 {
+  z-index: -1;
+  margin: 0;
+  font-size: 2.99em;
+}
+
+.col > p {
+  z-index: -2;
+  text-align: left;
+  margin-left: 3px;
+  font-size: 0.7em;
+}
+
+.background {
+  opacity: 1;
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.background img {
+  width: 100%;
+  height: 100%;
+}
+
+.col > p,
+h2 {
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 50px;
+  grid-auto-rows: minmax(auto);
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  justify-items: stretch;
+  /* a flexboxban lévő justify content helyett itt justify items van*/
+  align-items: stretch;
+  align-self: center;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(18, 2fr);
+}
+
+.col {
+  color: aliceblue;
+  background-image: linear-gradient(to right bottom, #47a261, #3d7253, #102819);
+  opacity: 1;
+  align-items: stretch;
+  overflow: auto;
+  cursor: pointer;
+  margin: 0 0 0 0;
+  padding: 0;
+  font-size: 1.2em;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+}
+
+.col:hover {
+  z-index: 1;
+  opacity: 1;
+  border-color: none;
+  background-color: white;
+  -webkit-transition: 0.3 ease;
+  transition: 0.3s ease;
+  transform: scale(1.7);
+  border: 0.5px solid #fff;
+  border-radius: 0%;
+}
+
+/* === az elemek típus szerint ====*/
+
+.noble-gas {
+  background-color: aqua;
+}
+
+.alkali-methal {
+  background-color: orange;
+}
+
+.alkali-earth {
+  background-color: yellow;
+}
+
+.nonmethal {
+  background-color: darkseagreen;
+}
+
+.other-nonmethal {
+  background-color: lawngreen;
+}
+
+.transition {
+  background-color: rosybrown;
+}
+
+.methalloids {
+  background-color: palegreen;
+}
+
+/* ==== Egyes elemcsoportokat kiemelik a gombok =====*/
+
+/* == Csoportok == */
+form {
+  display: flex;
+  left: 20%;
+  top: 100px;
+  text-align: start;
+  position: fixed;
+  width: 30%;
+  margin: 0, 0, 0, 0;
+  padding: 0, 0, 0, 0;
+  justify-content: space-between;
+}
+
+label {
+  color: white;
+  font-size: 2em;
+}
+
+/* ====== a periódusos rendszer elemei griddel a helyükre téve  =====*/
+
+.hydrogen {
+  grid-column: 1/1;
+  grid-row: 1;
+}
+
+.helium {
+  grid-column: 18/18;
+  grid-row: 1;
+}
+
+.lithium {
+  grid-column: 1/1;
+  grid-row: 2;
+}
+
+.berillium {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.neon {
+  grid-column: 18/18;
+  grid-row: 2;
+}
+
+.boron {
+  grid-column: 13/13;
+  grid-row: 2;
+}
+
+.carbon {
+  grid-column: 14/14;
+  grid-row: 2;
+}
+
+.nitrogen {
+  grid-column: 15/15;
+  grid-row: 2;
+}
+
+.oxygen {
+  grid-column: 16/16;
+  grid-row: 2;
+}
+
+.fluor {
+  grid-column: 17/17;
+  grid-row: 2;
+}
+
+.sodium {
+  grid-column: 1/1;
+  grid-row: 3;
+}
+
+.magnezium {
+  grid-column: 2/2;
+  grid-row: 3;
+}
+
+.aluminium {
+  grid-column: 13/13;
+  grid-row: 3;
+}
+
+.silicium {
+  grid-column: 14/14;
+  grid-row: 3;
+}
+
+.phosphor {
+  grid-column: 15;
+  grid-row: 3;
+}
+
+.sulfur {
+  grid-column: 16;
+  grid-row: 3;
+}
+
+.chloride {
+  grid-column: 17;
+  grid-row: 3;
+}
+
+.argon {
+  grid-column: 18;
+  grid-row: 3;
+}
+
+.kalium {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.calcium {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.scandium {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.titanium {
+  grid-column: 4;
+  grid-row: 4;
+}
+
+.vanadium {
+  grid-column: 5;
+  grid-row: 4;
+}
+
+.chrome {
+  grid-column: 6;
+  grid-row: 4;
+}
+
+.mangan {
+  grid-column: 7;
+  grid-row: 4;
+}
+
+.ferrum {
+  grid-column: 8;
+  grid-row: 4;
+}
+
+.cobalt {
+  grid-column: 9;
+  grid-row: 4;
+}
+
+.nikkel {
+  grid-column: 10;
+  grid-row: 4;
+}
+
+.copper {
+  grid-column: 11;
+  grid-row: 4;
+}
+
+.zinc {
+  grid-column: 12;
+  grid-row: 4;
+}
+
+.gallium {
+  grid-column: 13;
+  grid-row: 4;
+}
+
+.germanium {
+  grid-column: 14;
+  grid-row: 4;
+}
+
+.arsenic {
+  grid-column: 15;
+  grid-row: 4;
+}
+
+.selenium {
+  grid-column: 16;
+  grid-row: 4;
+}
+
+.bromine {
+  grid-column: 17;
+  grid-row: 4;
+}
+
+.krypton {
+  grid-column: 18;
+  grid-row: 4;
+}
+
+.rubidium {
+  grid-column: 1;
+  grid-row: 5;
+}
+
+.strontium {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.yttrium {
+  grid-column: 3;
+  grid-row: 5;
+}
+
+.zirconium {
+  grid-column: 4;
+  grid-row: 5;
+}
+
+.niobium {
+  grid-column: 5;
+  grid-row: 5;
+}
+
+.molibden {
+  grid-column: 6;
+  grid-row: 5;
+}
+
+.technetium {
+  grid-column: 7;
+  grid-row: 5;
+}
+
+.ruthenium {
+  grid-column: 8;
+  grid-row: 5;
+}
+
+.rhodium {
+  grid-column: 9;
+  grid-row: 5;
+}
+
+.palladium {
+  grid-column: 10;
+  grid-row: 5;
+}
+
+.silver {
+  grid-column: 11;
+  grid-row: 5;
+}
+
+.cadmium {
+  grid-column: 12;
+  grid-row: 5;
+}
+
+.indium {
+  grid-column: 13;
+  grid-row: 5;
+}
+
+.tin {
+  grid-column: 14;
+  grid-row: 5;
+}
+
+.antimony {
+  grid-column: 15;
+  grid-row: 5;
+}
+
+.tellurium {
+  grid-column: 16;
+  grid-row: 5;
+}
+
+.iodine {
+  grid-column: 17;
+  grid-row: 5;
+}
+
+.xenon {
+  grid-column: 18;
+  grid-row: 5;
+}
+
+.cesium {
+  grid-column: 1;
+  grid-row: 6;
+}
+
+.hafnium {
+  grid-column: 4;
+  grid-row: 6;
+}
+
+.barium {
+  grid-column: 2;
+  grid-row: 6;
+}
+
+.lanthan {
+  grid-column: 3;
+  grid-row: 6;
+}
+
+.tantal {
+  grid-column: 5;
+  grid-row: 6;
+}
+
+.wolfram {
+  grid-column: 6;
+  grid-row: 6;
+}
+
+.remium {
+  grid-column: 7;
+  grid-row: 6;
+}
+
+.osmium {
+  grid-column: 8;
+  grid-row: 6;
+}
+
+.iridium {
+  grid-column: 9;
+  grid-row: 6;
+}
+
+.platina {
+  grid-column: 10;
+  grid-row: 6;
+}
+
+.augurium {
+  grid-column: 11;
+  grid-row: 6;
+}
+
+.mercury {
+  grid-column: 12;
+  grid-row: 6;
+}
+
+.thallium {
+  grid-column: 13;
+  grid-row: 6;
+}
+
+.lead {
+  grid-column: 14;
+  grid-row: 6;
+}
+
+.bismuth {
+  grid-column: 15;
+  grid-row: 6;
+}
+
+.polonium {
+  grid-column: 16;
+  grid-row: 6;
+}
+
+.astatine {
+  grid-column: 17;
+  grid-row: 6;
+}
+
+.radon {
+  grid-column: 18;
+  grid-row: 6;
+}
+
+.francium {
+  grid-column: 1;
+  grid-row: 7;
+}
+
+.radium {
+  grid-column: 2;
+  grid-row: 7;
+}
+
+.actinium {
+  grid-column: 3;
+  grid-row: 7;
+}
+
+.rutherfordium {
+  grid-column: 4;
+  grid-row: 7;
+}
+
+.dubnium {
+  grid-column: 5;
+  grid-row: 7;
+}
+
+.seaborgium {
+  grid-column: 6;
+  grid-row: 7;
+}
+
+.bohrium {
+  grid-column: 7;
+  grid-row: 7;
+}
+
+.hassium {
+  grid-column: 8;
+  grid-row: 7;
+}
+
+.meintnerkum {
+  grid-column: 9;
+  grid-row: 7;
+}
+
+.darmstadium {
+  grid-column: 10;
+  grid-row: 7;
+}
+
+.roentgenium {
+  grid-column: 11;
+  grid-row: 7;
+}
+
+.copernicium {
+  grid-column: 12;
+  grid-row: 7;
+}
+
+.nihonium {
+  grid-column: 13;
+  grid-row: 7;
+}
+
+.flerovium {
+  grid-column: 14;
+  grid-row: 7;
+}
+
+.moscovium {
+  grid-column: 15;
+  grid-row: 7;
+}
+
+.livernorium {
+  grid-column: 16;
+  grid-row: 7;
+}
+
+.tenessine {
+  grid-column: 17;
+  grid-row: 7;
+}
+
+.oganesson {
+  grid-column: 18;
+  grid-row: 7;
+}
+
+.cerium {
+  grid-column: 4;
+  grid-row: 8;
+}
+
+.praseodymium {
+  grid-column: 5;
+  grid-row: 8;
+}
+
+.neodymium {
+  grid-column: 6;
+  grid-row: 8;
+}
+
+.promethium {
+  grid-column: 7;
+  grid-row: 8;
+}
+
+.samarium {
+  grid-column: 8;
+  grid-row: 8;
+}
+
+.europium {
+  grid-column: 9;
+  grid-row: 8;
+}
+
+.gadollinium {
+  grid-column: 10;
+  grid-row: 8;
+}
+
+.teribium {
+  grid-column: 11;
+  grid-row: 8;
+}
+
+.dysporosium {
+  grid-column: 12;
+  grid-row: 8;
+}
+
+.holmium {
+  grid-column: 13;
+  grid-row: 8;
+}
+
+.erbium {
+  grid-column: 14;
+  grid-row: 8;
+}
+
+.thullium {
+  grid-column: 15;
+  grid-row: 8;
+}
+
+.ytterbium {
+  grid-column: 16;
+  grid-row: 8;
+}
+
+.lutetium {
+  grid-column: 17;
+  grid-row: 8;
+}
+
+.thorium {
+  grid-column: 4;
+  grid-row: 9;
+}
+
+.protactinium {
+  grid-column: 5;
+  grid-row: 9;
+}
+
+.uranium {
+  grid-column: 6;
+  grid-row: 9;
+}
+
+.neptunium {
+  grid-column: 7;
+  grid-row: 9;
+}
+
+.plutonium {
+  grid-column: 8;
+  grid-row: 9;
+}
+
+.americum {
+  grid-column: 9;
+  grid-row: 9;
+}
+
+.curium {
+  grid-column: 10;
+  grid-row: 9;
+}
+
+.berkellium {
+  grid-column: 11;
+  grid-row: 9;
+}
+
+.californium {
+  grid-column: 12;
+  grid-row: 9;
+}
+
+.einsteinium {
+  grid-column: 13;
+  grid-row: 9;
+}
+
+.fermium {
+  grid-column: 14;
+  grid-row: 9;
+}
+
+.mendelevium {
+  grid-column: 15;
+  grid-row: 9;
+}
+
+.nobellium {
+  grid-column: 16;
+  grid-row: 9;
+}
+
+.lawrencium {
+  grid-column: 17;
+  grid-row: 9;
+}
+
+/* ======= A Modal- mint megjelenő kis ablakok definiálása és keyframmel az animáció létrehozása  ====*/
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  width: 80%;
+  height: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.8s;
+  animation-name: animatetop;
+  animation-duration: 0.8s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  font-size: 1.5em;
+  padding: 1px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {
+  text-align: center;
+  padding: 3%;
+  font-size: 1.5em;
+  min-width: 80%;
+  height: 100%;
+  text-align: center;
+  margin: 0, auto;
+}
+
+iframe {
+  width: 100%;
+  height: 90%;
+}
+
+.modal-footer {
+  padding: 2px 5px;
+  background-color: #285e28;
+  color: white;
+}
+
+/*======A responzivitás setupja (mediaquery)==*/
+
+@media (max-width: 1100px) {
+  form {
+    display: none;
+  }
+
+  form > div {
+    margin: 0;
+    padding: 0;
+  }
+
+  .col > p {
+    font-size: 3em;
+  }
+
+  .col > h2 {
+    font-size: 10em;
+  }
+
+  .container {
+    padding-top: 15em;
+    display: flex;
+    /*Must!!!! on the container, in order to turn it to flex*/
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .col {
+    background-image: linear-gradient(
+      to right bottom,
+      #3c8961,
+      #3d7253,
+      #153e25
+    );
+    background-repeat: no-repeat;
+    background-size: 400px;
+    padding: 5%;
+    margin: 0 auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    max-width: 200px;
+    height: 200px;
+  }
+
+  .col:hover {
+    z-index: 1;
+    border-color: none;
+    background-color: white;
+    -webkit-transition: 0.3 ease;
+    transition: 0.3s ease;
+    transform: scale(1.5);
+    border: 2px solid #fff;
+  }
+
+  .background img {
+    width: auto;
+    height: 1300px;
+  }
+
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    top: 10%;
+    bottom: 10%;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes animatetop {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-header {
+    font-size: 2em;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+  }
+
+  .modal-body {
+    padding: 4%;
+    font-size: 3em;
+    width: 90%;
+    height: auto;
+    left: 50%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .modal-footer {
+    background-color: #5cb85c;
+    color: white;
+  }
+}
